@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogging Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Vamsi's Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#create">Create Post</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="posts">
+    <h2>Recent Posts</h2>
+    <div id="post-list">
+      <!-- Blog posts will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <section id="create">
+    <h2>Create a New Post</h2>
+    <form id="postForm">
+      <input type="text" id="title" placeholder="Post Title" required><br>
+      <textarea id="content" placeholder="Post Content" required></textarea><br>
+      <button type="submit">Publish</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required><br>
+      <input type="password" id="loginPassword" placeholder="Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  
+</body>
+<script src="app.js"></script>
+
+</html>
